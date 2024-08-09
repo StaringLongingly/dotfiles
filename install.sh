@@ -5,7 +5,7 @@ cd yay-bin
 makepkg -si
 
 # Install the packages needed for the install
-yay -S hyprwayland-scanner-git tgpt neovim neovide hyprland-git sddm mako wl-clipboard easyeffects kmix mpvpaper cool-retro-term parsecd fff waterfox grimblast
+yay -S hyprwayland-scanner-git tgpt neovim neovide hyprland-git sddm mako wl-clipboard easyeffects kmix mpvpaper cool-retro-term parsec-bin fff waterfox grimblast
 
 # Rice up Neovim
 git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
