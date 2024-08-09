@@ -1,11 +1,13 @@
 # Install yay
-pacman -Sy --needed git base-devel
+sudo pacman -Sy --needed git base-devel
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si
 
+yay --save --answerdiff None --answerclean None --removemake
+
 # Install the packages needed for the install
-yay -S hyprwayland-scanner-git tgpt neovim neovide hyprland-git sddm mako wl-clipboard easyeffects kmix mpvpaper cool-retro-term parsec-bin fff waterfox grimblast
+yay -S acpi hyprwayland-scanner-git tgpt neovim neovide hyprland-git sddm mako wl-clipboard easyeffects kmix mpvpaper cool-retro-term parsec-bin fff waterfox grimblast
 
 # Rice up Neovim
 git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
