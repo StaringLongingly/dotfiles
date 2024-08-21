@@ -1,9 +1,71 @@
+format = '''
+$battery$all$character'''
+
 [character]
 format = '$symbol '
 success_symbol = "[:](bold white)"
 error_symbol = "[!](bold red)"
 vimcmd_symbol = "[<](bold green)"
 
+[battery]
+format = '[$symbol]($style) '
+full_symbol = '󰁹'
+charging_symbol = '󰂄'
+discharging_symbol = '󰂌'
+
+[[battery.display]]
+threshold = 10
+style = 'bold #ff0000'
+charging_symbol = '󰁺󱐋'
+discharging_symbol = '󰁺'
+
+[[battery.display]]
+threshold = 20
+style = 'bold #ff3300'
+charging_symbol = '󰁻󱐋'
+discharging_symbol = '󰁻'
+
+[[battery.display]]
+threshold = 30
+style = 'bold #ff6600'
+charging_symbol = '󰁼󱐋'
+discharging_symbol = '󰁻'
+
+[[battery.display]]
+threshold = 40
+style = 'bold #ff9900'
+charging_symbol = '󰁽󱐋'
+discharging_symbol = '󰁽'
+
+[[battery.display]]
+threshold = 50 
+style = 'bold #ffcc00'
+charging_symbol = '󰁾󱐋'
+discharging_symbol = '󰁾'
+
+[[battery.display]]
+threshold = 60
+style = 'bold #ffff00'
+charging_symbol = '󰁿󱐋'
+discharging_symbol = '󰁿'
+
+[[battery.display]]
+threshold = 70
+style = 'bold #ccff00'
+charging_symbol = '󰂀󱐋'
+discharging_symbol = '󰁿'
+
+[[battery.display]]
+threshold = 80
+style = 'bold #99ff00'
+charging_symbol = '󰂁󱐋'
+discharging_symbol = '󰂁'
+
+[[battery.display]]
+threshold = 90
+style = 'bold #66ff00'
+charging_symbol = '󰂂󱐋'
+discharging_symbol = '󰂂'
 
 [git_commit]
 tag_symbol = " tag "
