@@ -13,12 +13,6 @@ yay -S --needed cpio cmake acpi hyprwayland-scanner-git tgpt neovim neovide hypr
 git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 
-# Install the Sddm Theme
-git clone https://github.com/nicefaa6waa/genshin-sddm-theme.git
-cd genshin-sddm-theme
-bash install-sddm-theme.sh
-rm -r genshin-sddm-theme
-
 # Setup Hyprland split workspaces
 hyprpm update
 hyprpm add https://github.com/shezdy/hyprsplit
