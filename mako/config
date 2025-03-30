@@ -1,0 +1,20 @@
+sort=-time
+layer=overlay
+background-color=#0f0f0f
+width=400
+height=150
+border-size=2
+border-color=#ffb6ea
+text-color=#ffeffe
+border-radius=4 
+icons=1
+max-icon-size=64
+
+default-timeout=5000
+ignore-timeout=1
+font=Inconsolata Nerd Font Condensed 10
+anchor=top-center
+
+[category=mpd]
+default-timeout=2000
+group-by=category

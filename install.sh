@@ -7,7 +7,7 @@ makepkg -si
 yay --save --answerdiff None --answerclean None --removemake
 
 # Install the packages needed for the install
-yay -S --needed cpio cmake acpi hyprwayland-scanner-git tgpt neovim neovide hyprland-git sddm mako wl-clipboard easyeffects kmix mpvpaper cool-retro-term parsec-bin fff waterfox-bin grimblast
+yay -S --needed pkg-config kitty cpio cmake acpi hyprwayland-scanner-git tgpt neovim neovide hyprland-git sddm mako wl-clipboard easyeffects kmix mpvpaper cool-retro-term parsec-bin fff waterfox-bin grimblast
 
 # Rice up Neovim
 git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim

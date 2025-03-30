@@ -1,0 +1,58 @@
+* {
+	background-clip: padding-box;
+	border-radius: 0px;
+	text-shadow: none;
+	outline: none;
+	box-shadow: none;
+	color: white;
+  background: transparent;
+}
+
+/* GtkApplicationWindow */
+.background {
+	opacity: 1;
+	font-family: Inconsolata Nerd Font;
+}
+
+#root-box {}
+
+#app-list, #search {
+	background: alpha(#030303, 0.85);
+}
+
+#app-list {
+	border: 2px solid #595959;
+	border-radius: 10px;
+}
+
+#search {
+    font-size: 1.2em;
+    font-weight: 300;
+    padding: 2px 4px;
+    margin-bottom: 6px;
+    border: 2px solid #ffb6ea;
+		border-radius: 10px;
+}
+
+.app-row {
+	transition: 0.2s;
+	padding: 8px 16px 8px 0;
+	opacity: 0.95;
+}
+
+.app-row:selected, .app-row:hover {
+	opacity: 1;
+	border: 2px solid #ffb6ea;
+	border-radius: 10px;
+}
+
+.app-label {
+    padding-left: 0em;
+    font-size: 16px;
+    border: none;
+}
+
+.app-icon {
+	border-radius: 1rem;
+	margin: 0 8px;
+}
