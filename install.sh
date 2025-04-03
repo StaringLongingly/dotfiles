@@ -7,7 +7,7 @@ rm -rf yay-bin
 
 cp * .config/
 
-yes | yay --save --answerdiff None --answerclean None --removemake
+yay --save --answerdiff None --answerclean None --removemake
 
 # Install the packages needed for the install
 yes | yay -S --needed xdg-desktop-portal-hyprland-git pkg-config kitty cpio cmake acpi hyprwayland-scanner-git tgpt neovim neovide hyprland-git sddm mako wl-clipboard easyeffects kmix mpvpaper cool-retro-term parsec-bin fff waterfox-bin grimblast hyprpaper sirula swayosd-git vesktop plocate
