@@ -2,7 +2,7 @@
 sudo pacman -Sy --needed git base-devel
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
-yes | makepkg -si
+makepkg -si
 rm -rf yay-bin
 
 cp * .config/
