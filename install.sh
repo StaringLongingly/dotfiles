@@ -13,7 +13,7 @@ yay --save --answerdiff None --answerclean None --removemake
 
 # Install the packages needed for the install
 echo "Installing basic packages"
-yay -S --needed xdg-desktop-portal-hyprland-git pkg-config kitty cpio cmake acpi hyprwayland-scanner-git tgpt neovim neovide hyprland-git sddm mako wl-clipboard easyeffects kmix mpvpaper cool-retro-term parsec-bin fff waterfox-bin grimblast hyprpaper sirula swayosd-git vesktop plocate
+yay -S --needed xdg-desktop-portal-hyprland-git pkg-config kitty cpio cmake acpi hyprwayland-scanner-git neovim hyprland-git sddm mako wl-clipboard easyeffects kmix pavucontrol-qt mpvpaper parsec-bin waterfox-bin grimblast hyprpaper sirula swayosd-git vesktop plocate
 
 # Nvidia Drivers (can disable)
 echo "Installing nvidia drivers"
