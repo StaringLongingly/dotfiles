@@ -56,3 +56,12 @@
 	border-radius: 1rem;
 	margin: 0 8px;
 }
+
+#entry:selected {
+background-color: white;
+}
+
+#text:selected {
+background-color: red;
+color: red;
+}
