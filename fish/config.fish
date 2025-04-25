@@ -2,7 +2,6 @@
 alias unifetch 'unifetch --chafa ~/.config/hypr/zero_square.png'
 alias hyprconf 'nvim ~/.config/hypr/hyprland.conf'
 alias yay-clean 'yay --answerdiff None --answerclean All'
-alias plex 'QT_QPA_PLATFORM=xcb QT_STYLE_OVERRIDE="" Plex'
 alias ai 'tgpt --provider deepseek'
 alias silence 'killall -9'
 
