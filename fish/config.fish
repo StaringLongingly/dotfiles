@@ -4,6 +4,7 @@ alias hyprconf 'nvim ~/.config/hypr/hyprland.conf'
 alias yay-clean 'yay --answerdiff None --answerclean All'
 alias ai 'tgpt --provider deepseek'
 alias silence 'killall -9'
+alias background 'nohup'
 
 # Run Unifetch or Hyprland depending if the system just booted
 if killall Hyprland -0

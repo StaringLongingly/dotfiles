@@ -1,3 +1,4 @@
+cd
 # Install yay
 echo "Installing yay"
 sudo pacman -Sy --needed git base-devel
@@ -7,6 +8,7 @@ makepkg -si
 rm -rf yay-bin
 
 echo "Copying config files"
+mkdir .config
 cp * .config/
 
 yay --save --answerdiff None --answerclean None --removemake
@@ -17,7 +19,7 @@ yay -S --needed xdg-desktop-portal-hyprland-git pkg-config kitty cpio cmake acpi
 
 # Nvidia Drivers (can disable)
 echo "Installing nvidia drivers"
-yay -S nvidia-nouveau nvidia-utils nvidia-open-dkms lib32-vulkan-nouveau vulkan-headers mangohud gamemode
+yay -S nvidia-nouveau nvidia-utils nvidia-open-dkms lib32-vulkan-nouveau vulkan-headers mangohud gamemode mangoverlay
 
 # Rice up Neovim
 echo "Configuring Neovim"
