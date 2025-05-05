@@ -7,11 +7,11 @@ alias silence 'killall -9'
 alias background 'nohup'
 
 # Run Unifetch or Hyprland depending if the system just booted
-if killall Hyprland -0
-  unifetch
-else
-  Hyprland
+if status is-login 
+  Hyprland > /dev/null
 end
+
+unifetch
 
 # Make It look Pretty
 starship init fish | source
