@@ -5,11 +5,15 @@ sudo pacman -Sy --needed git base-devel
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si
+cd ..
 rm -rf yay-bin
 
 echo "Copying config files"
 mkdir .config
 cp * .config/
+
+echo "Copying user scripts"
+sudo cp userscripts/* /usr/local/bin
 
 yay --save --answerdiff None --answerclean None --removemake
 
