@@ -5,11 +5,11 @@
 [miscellaneous]
 
 path=/home/longingly/Music
-version=3.3.0
+version=3.3.2
 allowNotifications=1
 hideLogo=0
 hideHelp=0
-lastVolume=5
+lastVolume=70
 
 # Cache: Set to 1 to use cache of the music library directory tree for faster startup times.
 cacheLibrary=-1
@@ -164,8 +164,7 @@ showPlaylistAlt=Z
 showLibraryAlt=X
 showTrackAlt=C
 showSearchAlt=V
-showRadioSearchAlt=
-showKeysAlt=N
+showKeysAlt=
 
 # For special keys use terminal codes: OS, for F4 for instance. This can depend on the terminal.
 # You can find out the codes for the keys by using tools like showkey.
