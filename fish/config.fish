@@ -16,9 +16,9 @@ function find-edit --wraps nvim --description 'Searches for a file and opens it 
 end
 
 # Run Unifetch or Hyprland depending if the system just booted
-if status is-login 
-  Hyprland > /dev/null
-end
+# if status is-login 
+#   Hyprland > /dev/null
+# end
 
 unifetch
 
