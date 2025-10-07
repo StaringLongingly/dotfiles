@@ -1,4 +1,4 @@
-function cd --description 'alias cd cd $argv; ls $argv'
+function cd --description 'Changes Directory & Shows the files inside of it'
     if test -f $argv
         set argv ~
     end
