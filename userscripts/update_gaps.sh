@@ -65,17 +65,15 @@ perform_app_action() {
     if [[ "$is_active" == "true" ]]; then
         # Do something when special workspace is active
         hyprctl dispatch setprop address:$address noborder on 
-        hyprctl dispatch setprop address:$address norounding on 
-        hyprctl dispatch setprop address:$address noborder on 
+        hyprctl dispatch setprop address:$address fullscreenstate 1 
+        hyprctl dispatch setprop address:$address alpha 0.0 
+        hyprctl dispatch setprop address:$address alphainactive 0.0 
+
     else
         # Do something when special workspace is inactive
         hyprctl dispatch setprop address:$address noborder off 
-        hyprctl dispatch setprop address:$address norounding off 
-        hyprctl dispatch setprop address:$address noborder off 
-
-	hyprctl dispatch setprop address:$address activebordercolor rgba\(0, 0, 0, 0\) 
-	hyprctl dispatch setprop address:$address inactivebordercolor rgba\(0, 0, 0, 0\) 
-	hyprctl dispatch setprop address:$address rounding 20 
+        hyprctl dispatch setprop address:$address alpha 1.0 
+        hyprctl dispatch setprop address:$address alphainactive 1.0 
     fi
 }
 
